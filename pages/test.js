@@ -1,3 +1,3 @@
 export default function test() {
-  return "Hello adib muhammad visokaa"
+  return "Hello adib muhammad visoka"
 }
