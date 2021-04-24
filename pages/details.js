@@ -10,7 +10,10 @@ export default function details(){
       <center>
         <div className="row container mt-5" >
           <div className="col">
-            <div className="row container text-center">
+            <div className="row container">
+              <div className="col">
+                row 1
+              </div>
             </div>
             <div className="row container">
               <div className="col">col 1</div>
