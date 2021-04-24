@@ -12,13 +12,13 @@ export default function details(){
           <div className="col">
             <div className="row container">
               <div className="col">
-                row 1.
+              <img src="/products/tas1-big.jpg"></img>
               </div>
             </div>
             <div className="row container">
-              <div className="col">col 1</div>
-              <div className="col">col 2</div>
-              <div className="col">col 3</div>
+              <div className="col"><img src="/products/tas1-small-1.png"></img></div>
+              <div className="col"><img src="/products/tas1-small-2.png"></img></div>
+              <div className="col"><img src="/products/tas1-small-3.png"></img></div>
             </div>
           </div>
           <div className="col container">
@@ -35,8 +35,10 @@ export default function details(){
                 value="Add to cart" 
                 background="#0086CF"
                 border="nome"
+                color="white"
                 radius="10px"
                 padding="2px 2px 1px 1px"
+                border="none"
               />
             </div>
           </div>
