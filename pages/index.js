@@ -1,65 +1,71 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-export default function Home() {
+import AtomText from "../components/atoms/text";
+import AtomButton from "../components/atoms/button";
+import OrganismNav from "../components/organisms/nav";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Button, Navbar, Nav, Form, FormControl } from "react-bootstrap";
+import MoleculeProductList from "../components/molecules/product_list";
+export default function test() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <OrganismNav />
+      <center>
+        <div className="row container mt-5">
+          <div className="col text-left">
+            <AtomText value="Peduli Digital Market" size="36px" weight="bold" />
+            <AtomText
+              value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
+              size="14px"
+            />
+            <div className="row mt-5">
+              <div className="col-5">
+                <AtomButton
+                  background="#0086CF"
+                  value="Browse All Products"
+                  color="#FFF"
+                  border="none"
+                  padding="10px 20px"
+                  radius="10px"
+                />
+              </div>
+              <div className="col">
+                <AtomButton
+                  background="#F0F0F0"
+                  value="Follow This Board"
+                  border="none"
+                  padding="10px 20px"
+                  radius="10px"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <img src="/images/img_beranda.svg" />
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className="mt-5 pt-5"
+          style={{ width: "100%", height: "512px", background: "#F9F9F9" }}
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+          <center>
+            <div className="row container">
+              <div className="col-12 text-left">
+                <AtomText value="Forever bag" size="24px" weight="bold" />
+              </div>
+              <div className="col">
+                <div className="p-4 templateProductList text-left">
+                  <img src="/products/product_1.svg" />
+                  <AtomText value="Lavonte #A1294" size="14px" weight="bold" />
+                  <AtomText value="Forever Shoes" size="9px"/>
+                  <AtomText value="$125.00" size="18px" weight="bold" />
+                </div>
+              </div>
+              <div className="col">product 2</div>
+              <div className="col">product 3</div>
+              <div className="col">product 4</div>
+            </div>
+          </center>
+        </div>
+      </center>
+    </>
+  );
 }
