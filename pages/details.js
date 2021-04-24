@@ -12,7 +12,7 @@ export default function details(){
           <div className="col">
             <div className="row container">
               <div className="col">
-                row 1
+                row 1.
               </div>
             </div>
             <div className="row container">
